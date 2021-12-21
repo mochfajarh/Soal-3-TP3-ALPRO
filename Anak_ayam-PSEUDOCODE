@@ -1,0 +1,25 @@
+Var
+        N : Integer;
+        i : Integer;
+
+Begin
+        writeln('Induk Ayam punya berapa anak ayam?');
+        readln(N);
+        if ( N > 1 ) then
+        begin
+            writeln('Anak ayam turunlah ',N);
+            i := 1;
+            repeat
+                    writeln('Mati satu tinggal ', N - i );
+                    i := i + 1;
+            until ( i > N-1 );
+            writeln('Mati satu tinggal induknya');
+        end else if ( N = 1 ) then
+        begin
+            writeln('Anak ayam turunlah 1');
+            writeln('Mati satu tinggal induknya');
+        end else { Input N < 1 }
+        begin
+            writeln('Input jumlah anak ayam tidak boleh < 1 ');
+        end;
+End.
