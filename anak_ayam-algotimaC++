@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+
+int a;
+int main ()
+{
+ cout << "masukkan jumlah anak ayam";
+ cin >> a;
+ for( a ; a > 0 ; a-- )
+ {
+  cout << "anak ayam turun " << a << " mati satu tinngal " << a-1 << endl ; 
+ }
+}
